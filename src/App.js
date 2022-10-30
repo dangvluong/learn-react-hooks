@@ -7,6 +7,7 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import PostFiltersForm from './components/PostFiltersForm';
 import Clock from './components/Clock';
+import BetterClock from './components/BetterClock';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -111,6 +112,7 @@ function App() {
       <PostList posts={postList}></PostList>
       <Pagination pagination={pagination} onPageChange={handlePageChange}></Pagination> */}
       {showClock && <Clock></Clock>}
+      <BetterClock></BetterClock>
       <button onClick={() => setShowClock(false)}>Hide Clock</button>
 
     </div>
